@@ -1,0 +1,160 @@
+.carousel-section {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.slide-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.text-content {
+  color: white;
+  flex: 1;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: #acaaac;
+  color: white;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.year {
+  font-size: 5rem;
+  opacity: 0.3;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* 컨트롤 스타일 */
+.carousel-controls {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: rgb(18, 15, 15);
+}
+
+.pause-button {
+  background: none;
+  border: none;
+  color: rgb(20, 11, 11);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.progress-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.progress-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.progress-dot.active {
+  background-color: rgb(39, 30, 30);
+}
+
+.timer {
+  font-size: 0.875rem;
+  color: rgba(27, 19, 19, 0.8);
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 300px;
+  }
+
+  .slide-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .year {
+    font-size: 3rem;
+  }
+
+  .image-content img {
+    max-width: 200px;
+  }
+
+  .carousel-controls {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+.carousel-slide .tag,
+.carousel-slide .title,
+.carousel-slide .subtitle,
+.carousel-slide .year {
+  color: #000000;
+} 

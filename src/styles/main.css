@@ -1,0 +1,203 @@
+/* 기본 레이아웃 */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 헤더 스타일 */
+.header {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}
+
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* 네비게이션 스타일 */
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  white-space: nowrap;
+  font-size: 0.875rem;
+}
+
+.nav-link:hover {
+  color: #4b5563;
+}
+
+.signup-button {
+  background-color: #60a5fa;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.125rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+/* 앱 바 스타일 */
+.app-bar {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.app-bar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.app-bar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* 로고 스타일 */
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 2rem;
+}
+
+/* 검색창 스타일 */
+.search-container {
+  width: 100%;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  padding-right: 3rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.125rem;
+}
+
+.search-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 0 1rem;
+  background-color: #60a5fa;
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
+}
+
+.search-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: white;
+}
+
+/* 배너 스타일 */
+.banner {
+  display: none;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+}
+
+.banner-image {
+  width: 3rem;
+  height: 4rem;
+  object-fit: cover;
+}
+
+.banner-text {
+  margin-left: 0.5rem;
+}
+
+.banner-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.banner-description {
+  font-size: 0.75rem;
+  color: #6b7280;
+  display: none;
+}
+
+.banner-price {
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+/* 메인 컨텐츠 */
+.main-content {
+  flex-grow: 1;
+}
+
+/* 푸터 */
+.footer {
+  margin-top: auto;
+}
+
+/* 반응형 스타일 */
+@media (min-width: 640px) {
+  .app-bar-content {
+    flex-direction: row;
+  }
+
+  .logo-container {
+    width: 25%;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    height: 2.5rem;
+  }
+
+  .search-container {
+    width: 50%;
+    padding: 0 1rem;
+  }
+
+  .banner {
+    display: flex;
+    width: 25%;
+    justify-content: flex-end;
+  }
+
+  .banner-image {
+    width: 4rem;
+    height: 5rem;
+  }
+
+  .banner-price {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    height: 3rem;
+  }
+
+  .banner-description {
+    display: block;
+  }
+} 

@@ -1,0 +1,147 @@
+.footer-container {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  font-size: 0.875rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+/* 고객센터 섹션 */
+.customer-service {
+  flex: 0 0 300px;
+}
+
+.customer-service h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.phone-number {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.service-time {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.quick-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.link-button {
+  padding: 0.25rem 0.75rem;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: #666;
+}
+
+/* 푸터 메뉴 */
+.footer-menu {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.menu-column h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.menu-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-column li {
+  margin-bottom: 0.5rem;
+}
+
+.menu-column a {
+  color: #666;
+  text-decoration: none;
+}
+
+.menu-column a:hover {
+  color: #333;
+}
+
+.highlight {
+  color: #2b7f3c !important;
+}
+
+/* 하단 정보 */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 2rem auto 0;
+  padding: 2rem 1rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.footer-links {
+  margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+  color: #666;
+  text-decoration: none;
+  margin-right: 1.5rem;
+}
+
+.company-info {
+  color: #666;
+  line-height: 1.6;
+}
+
+.company-info p {
+  margin-bottom: 0.5rem;
+}
+
+.company-info span {
+  margin-right: 1rem;
+}
+
+.business-info {
+  color: #2b7f3c;
+  text-decoration: underline;
+}
+
+.copyright {
+  margin-top: 1.5rem;
+  color: #999;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 1024px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-menu {
+    grid-template-columns: 1fr;
+  }
+
+  .customer-service {
+    flex: 0 0 auto;
+  }
+} 

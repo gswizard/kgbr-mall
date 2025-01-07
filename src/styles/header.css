@@ -1,0 +1,50 @@
+.header {
+  border-bottom: 1px solid #e5e7eb;
+  margin: 0; /* 마진 제거 */
+  padding: 0; /* 패딩 제거 */
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #666;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.nav-link:hover {
+  color: #333;
+}
+
+.signup-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border: none;
+  border-radius: 0.125rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  background-color: #45a049;
+} 

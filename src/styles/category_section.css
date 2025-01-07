@@ -1,0 +1,156 @@
+.cate-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* 카테고리 네비게이션 */
+.category-nav {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.category-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-item {
+  flex: 1;
+  text-align: center;
+}
+
+.category-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.category-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.category-label {
+  font-size: 0.875rem;
+}
+
+/* 티켓 섹션 */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.page-indicator {
+  color: #666;
+}
+
+.ticket-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+/* 티켓 카드 */
+.ticket-spots {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.ticket-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.ticket-image {
+  width: 100%;
+  height: 200px;
+}
+
+.ticket-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ticket-info {
+  padding: 1rem;
+}
+
+.ticket-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.ticket-date,
+.ticket-location {
+  color: #666;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+/* 매거진 섹션 */
+.magazine-section {
+  border-left: 1px solid #e5e7eb;
+  padding-left: 2rem;
+}
+
+.magazine-cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.magazine-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.magazine-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.magazine-title {
+  padding: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .ticket-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .magazine-section {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 2rem;
+  }
+
+  .category-list {
+    flex-wrap: wrap;
+  }
+
+  .category-item {
+    flex: 0 0 25%;
+  }
+} 
