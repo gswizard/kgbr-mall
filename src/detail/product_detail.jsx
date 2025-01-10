@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Zoom from 'react-medium-image-zoom'; // react-medium-image-zoom 추가
+import 'react-medium-image-zoom/dist/styles.css'; // react-medium-image-zoom 스타일 추가
 import '../styles/product_detail.css';
 import Header from '../main/header'; // header.jsx 추가
 import Footer from '../main/footer'; // footer.jsx 추가
@@ -79,7 +81,9 @@ function ProductDetail() {
           {/* 이미지 섹션 */}
           <div className="product-gallery">
             <div className="main-image">
-              <img src={product.images[0]} alt={product.title} />
+              <Zoom>
+                <img src={product.images[0]} alt={product.title} />
+              </Zoom>
             </div>
           </div>
 
