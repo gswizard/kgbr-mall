@@ -16,8 +16,8 @@ function Footer() {
               <p>대량 주문 webmaster@kgbr.co.kr</p>
             </div>
             <div className="quick-links">
-              <button className="link-button">FAQ</button>
-              <button className="link-button">1:1고객상담</button>
+              <a href="#" onClick={(e) => e.preventDefault()}>FAQ</a>
+              <a href="#" onClick={(e) => e.preventDefault()}>1:1고객상담</a>
             </div>
           </div>
 
