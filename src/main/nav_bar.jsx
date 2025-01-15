@@ -86,29 +86,29 @@ function NavBar() {
                   onMouseEnter={() => setIsMenuOpen(true)}
                   onMouseLeave={() => setIsMenuOpen(false)}
                   style={{display: isMenuOpen ? 'block' : 'none'}}>
-                  <li><a href="">국내도서</a></li>
+                  <li><a href="#" onClick={(e) => e.preventDefault()}>국내도서</a></li>
                   <li><a href="/list/product_list.jsx">국내도서</a></li>
-                  <li><a href="#">베스트</a></li>
-                  <li><a href="#">신상품</a></li>
-                  <li><a href="#">추천</a></li>
-                  <li><a href="#">전자책</a></li>
-                  <li><a href="#">오디오</a></li>
-                  <li><a href="#">용품</a></li>
+                  <li><a href="#" onClick={(e) => e.preventDefault()}>베스트</a></li>
+                  <li><a href="#" onClick={(e) => e.preventDefault()}>신상품</a></li>
+                  <li><a href="#" onClick={(e) => e.preventDefault()}>추천</a></li>
+                  <li><a href="#" onClick={(e) => e.preventDefault()}>전자책</a></li>
+                  <li><a href="#" onClick={(e) => e.preventDefault()}>오디오</a></li>
+                  <li><a href="#" onClick={(e) => e.preventDefault()}>용품</a></li>
                 </ul>
               </div>
               {/* 메인 메뉴 */}
               <ul className="main-menu">
-                <li><a href="#">국내도서</a></li>
-                <li><a href="#">베스트</a></li>
-                <li><a href="#">신상품</a></li>
-                <li><a href="#">추천</a></li>
+                <li><a href="#" onClick={(e) => e.preventDefault()}>국내도서</a></li>
+                <li><a href="#" onClick={(e) => e.preventDefault()}>베스트</a></li>
+                <li><a href="#" onClick={(e) => e.preventDefault()}>신상품</a></li>
+                <li><a href="#" onClick={(e) => e.preventDefault()}>추천</a></li>
               </ul>
             </div>
 
             {/* 오른쪽 메뉴 영역 */}
             <ul className="right-menu">
-              <li><a href="#">이벤트</a></li>
-              <li><a href="#">출석체크</a></li>
+              <li><a href="#" onClick={(e) => e.preventDefault()}>이벤트</a></li>
+              <li><a href="#" onClick={(e) => e.preventDefault()}>출석체크</a></li>
             </ul>
           </div>
         </nav>
